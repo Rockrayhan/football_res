@@ -9,6 +9,10 @@ body {
     margin-right: 40px;
 }
 
+/* header {
+    height: 100vh;
+} */
+
 .banner {
     background-color: rgb(3, 8, 32);
     display: flex; 
@@ -18,29 +22,24 @@ body {
     margin-top: 20px;
     border-radius: 30px;
     flex-wrap: wrap;
-    height: 60vh;
 }
 
 .left-banner {
     width: 50%;
 }
+
 .right-banner {
-    width: 50%;
+    width: 60%;
+    
 }
 
 .right-banner {
     width: 400px;
-}
-
-/* .right-banner img {
-    width: 60%;
-} */
-
-.right-banner img {
     transition:  transform 3s;
 }
 
-.right-banner img:hover {
+
+.right-banner:hover {
     transform: rotate(10deg);
 }
 
@@ -75,8 +74,6 @@ main {
 .menu-bar button:hover {
     background-color: rgb(245, 52, 52);
 }
-
-
 
 
 .cards-div {
