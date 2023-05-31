@@ -18,7 +18,7 @@ body {
     display: flex; 
     justify-content: center;
     color: rgb(245, 222, 179);
-    padding: 40px;
+    padding: 30px;
     margin-top: 20px;
     border-radius: 30px;
     flex-wrap: wrap;
@@ -41,7 +41,14 @@ body {
     cursor: pointer;
     background-color: rgb(245, 52, 52);
     margin-top: 20px;
+    transition: transform 0.90s;
 }
+
+
+.left-banner button:hover {
+    transform: scale(1.2);
+}
+
 
 .left-banner button p {
     margin-left: 20px;
@@ -64,33 +71,6 @@ main {
     gap: 50px;
 }
 
-/* ========= menu bar ========= */
-
-.menu-bar{
-    background-color: rgb(3, 8, 32);
-    width: 25%;
-    padding: 10px;
-    height: 200px;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    
-}
-
-.menu-bar button {
-    padding: 10px;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-
-.menu-bar button:hover {
-    background-color: rgb(245, 52, 52);
-}
 
 
 .cards-div {
@@ -114,7 +94,7 @@ main {
 
 .card:hover {
     transform: translate(0, -20px);
-    box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.425);
+    box-shadow: 5px 10px 10px 10px rgba(128, 128, 128, 0.425);
 }
 
 
