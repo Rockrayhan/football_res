@@ -28,20 +28,35 @@ body {
     width: 50%;
 }
 
+
+.left-banner h1 {
+    font-size: 50px;
+}
+
+.left-banner button {
+    padding: 5px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(245, 52, 52);
+    margin-top: 20px;
+}
+
+.left-banner button p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .right-banner {
     width: 60%;
     
 }
 
 .right-banner {
-    width: 400px;
-    transition:  transform 3s;
+    width: 400px; 
 }
 
-
-.right-banner:hover {
-    transform: rotate(10deg);
-}
 
 main {
     display: flex;
@@ -49,6 +64,7 @@ main {
     gap: 50px;
 }
 
+/* ========= menu bar ========= */
 
 .menu-bar{
     background-color: rgb(3, 8, 32);
@@ -69,6 +85,7 @@ main {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
+    
 }
 
 .menu-bar button:hover {
@@ -89,8 +106,17 @@ main {
     padding: 5px;
     border-radius: 10px;
     width: 80%;
+    transition: transform 0.90s;
+    cursor: pointer;
     
 }
+
+
+.card:hover {
+    transform: translate(0, -20px);
+    box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.425);
+}
+
 
 .blog-img {
     width: 100%;
