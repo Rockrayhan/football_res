@@ -26,6 +26,7 @@ body {
     margin-top: 20px;
     border-radius: 30px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .left-banner {
@@ -100,7 +101,6 @@ main {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-
 }
 
 .menu-bar button:hover {
@@ -112,9 +112,15 @@ a {
     color: black;
 }
 
+/* ========================================================= */
 
+
+
+
+/*================= cards div ================ */
 
 .cards-div {
+    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -129,6 +135,7 @@ a {
     width: 80%;
     transition: transform 0.90s;
     cursor: pointer;
+    
 
 }
 
@@ -219,17 +226,48 @@ footer h1 {
 
 /* ================ media query ==================== */
 
+
+/* small device  */
 @media screen and (max-width:708px) {
     .cards-div {
         grid-template-columns: repeat(1, 1fr);
     }
+    .menu-bar {
+        flex-direction: column;
+        width: 80%;
+        height: 30%;
+    }
+    .menu-bar button {
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
 }
+
 /* Medium device  */
 
 @media screen and (min-width:709px) and (max-width:992px) {
     .cards-div {
         grid-template-columns: repeat(2, 1fr);
     }
+    .menu-bar {
+        flex-direction: row;
+        width: 90%;
+        height: 30%;
+    }
+    .menu-bar button {
+        width: 100%;
+    }
+    
+    main {
+        flex-direction: column;
+    }
 }
+
+
+
+
+
 
 /* ===================================================*/
