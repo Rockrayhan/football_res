@@ -230,6 +230,7 @@ footer h1 {
 
 .card-match {
     display: flex;
+    justify-content: center;
     gap: 10px;
     padding: 5px;
 

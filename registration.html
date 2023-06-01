@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <style>
+        body {
+            background-image: url('/assets/subscribe-bg.jpg');
+        }
+
+        .full-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 60px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .left-col {
+ 
+        }
+
+        .left-col h1 {
+            font-size: 60px;
+        }
+        .right-col {
+           display: grid;
+           gap: 40px;
+           grid-template-columns: repeat(3, 1fr);
+        }
+
+        button {
+            font-size: 30px;
+            font-weight: 600;
+            background-color: rgba(255, 228, 196, 0);
+            margin-top: 30px;
+            cursor: pointer;
+        }
+
+        button p {
+            margin: 20px;
+        }
+
+
+/* ========= menu bar ========= */
+
+#blog {
+    background-color: rgb(253, 89, 89);
+}
+
+.menu-div {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar {
+    background-color: rgba(3, 8, 32, 0.205);
+    padding: 10px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.menu-bar button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.menu-bar button:hover {
+    background-color: rgb(250, 156, 156);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+   <div class="menu-div">
+    <div class="menu-bar">
+        <button><a href="index.html">Blog</a></button>
+        <button> <a href="upcomming.html">Upcoming Match</a> </button>
+        <button id="blog"> <a href="registration.html">Subscribe</a> </button>
+      </div>
+   </div>
+<div class="full-container">
+    <div class="container">
+        <div class="left-col">
+            <h1>
+                Sports Club
+            </h1>
+            <h3>Become a premum member of our sports club and <br> Watch Premium Content easy and regularly without any adds. </h3>
+
+            <button>
+               <p> SUBSCRIBE </p>
+            </button>
+        </div>
+        <div class="right-col">
+            <img src="assets/cr7.jpg" alt="">
+            <img src="assets/cr7.jpg" alt="">
+            <img src="assets/cr7.jpg" alt="">
+            <img src="assets/cr7.jpg" alt="">
+            <img src="assets/cr7.jpg" alt="">
+            <img src="assets/cr7.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+ 
+</body>
+</html>
