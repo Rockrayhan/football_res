@@ -20,7 +20,7 @@ body {
 .banner {
     background-color: rgb(3, 8, 32);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     color: rgb(245, 222, 179);
     padding: 30px;
     margin-top: 20px;
@@ -30,7 +30,7 @@ body {
 }
 
 .left-banner {
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -152,7 +152,24 @@ a {
     width: 100%;
 }
 
+/* ======= see more button ===== */
 
+.see-more-div {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.see-more-button {
+    display: none;
+    padding: 10px;
+    background-color: rgb(245, 52, 52);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+    
+}
 
 
 /* ========= footer ============ */
@@ -228,7 +245,7 @@ footer h1 {
 
 
 /* small device  */
-@media screen and (max-width:708px) {
+@media screen and (max-width:576px) {
     .cards-div {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -247,12 +264,18 @@ footer h1 {
         display: flex;
         flex-direction: column;
     }
+    /* .banner {
+        flex-direction: column-reverse;
+        
+    }
+     */
+   
     
 }
 
 /* Medium device  */
 
-@media screen and (min-width:709px) and (max-width:992px) {
+@media screen and (min-width:577px) and (max-width:992px) {
     .cards-div {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -268,6 +291,11 @@ footer h1 {
     main {
         flex-direction: column;
     }
+
+    .see-more-button {
+        display: inline;
+    }
+ 
 }
 
 
