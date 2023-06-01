@@ -187,7 +187,7 @@ footer h1 {
 }
 
 
-/*========= upcomming match ========== */
+/*========= upcomming match page ========== */
 
 .card-upcoming {
     border: 1px solid grey;
@@ -243,6 +243,11 @@ footer h1 {
     main {
         flex-direction: column;
     }
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 /* Medium device  */
