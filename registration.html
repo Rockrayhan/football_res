@@ -14,18 +14,31 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-top: 50px;
+            margin-top: 80px;
+            margin-left: 80px;
+            margin-right: 80px;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
             gap: 60px;
         }
 
+        .right-col {
+           display: grid;
+           gap: 40px;
+           grid-template-columns: repeat(3, 1fr);
+        }
+
+
         img {
             width: 200px;
+            height: 150px;
+            border-radius: 10px;
         }
 
         .left-col {
@@ -35,11 +48,7 @@
         .left-col h1 {
             font-size: 60px;
         }
-        .right-col {
-           display: grid;
-           gap: 40px;
-           grid-template-columns: repeat(3, 1fr);
-        }
+
 
         button {
             font-size: 30px;
@@ -96,6 +105,48 @@ a {
     color: black;
 }
 
+
+.left-col button:hover {
+    background-image: linear-gradient(to right, rgb(252, 74, 74), rgb(255, 136, 0));
+}
+
+/* ================ media query ==================== */
+
+
+/* small device  */
+@media screen and (max-width:576px) {
+
+    .container {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+   
+    .right-col {
+           grid-template-columns: repeat(1, 1fr);
+        }
+
+    
+}
+
+/* Medium device  */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .container {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    
+    .right-col {
+           grid-template-columns: repeat(2, 1fr);
+        }
+}
+
+
+
+
+
+
+/* ===================================================*/
+
+
     </style>
 </head>
 <body>
@@ -115,16 +166,16 @@ a {
             <h3>Become a premum member of our sports club and <br> Watch Premium Content easy and regularly without any adds. </h3>
 
             <button>
-               <p> SUBSCRIBE </p>
+               <p> <a target="_blank" href="https://www.linkedin.com/in/khayrul-alam-8a69981a2/">SUBSCRIBE</a> </p>
             </button>
         </div>
         <div class="right-col">
-            <img src="assets/cr7.jpg" alt="">
-            <img src="assets/cr7.jpg" alt="">
-            <img src="assets/cr7.jpg" alt="">
-            <img src="assets/cr7.jpg" alt="">
-            <img src="assets/cr7.jpg" alt="">
-            <img src="assets/cr7.jpg" alt="">
+            <img src="https://e2.365dm.com/13/05/800x600/168311249_2941386.jpg?20130813223857" alt="">
+            <img src="https://i2-prod.manchestereveningnews.co.uk/incoming/article25783135.ece/ALTERNATES/s615/0_GettyImages-1450080117.jpg" alt="">
+            <img src="https://resources.premierleague.com/photos/2023/04/12/153a40d3-7d73-4f6b-a59a-538ae4067ccf/GettyImages-1478715947.jpg?width=930&height=620" alt="">
+            <img src="https://e1.365dm.com/17/08/800x600/skysports-premier-league-football-mohamed-salah-liverpool_4071859.jpg?20170812142748" alt="">
+            <img src="https://media.zenfs.com/en/planet_sport_833/c685519cf2cbc8e69a9db998a460f881" alt="">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/6348003ff184df601ccba7a3/0x0.jpg?format=jpg&width=1200" alt="">
         </div>
     </div>
 </div>
