@@ -105,6 +105,11 @@ main {
 
 .menu-bar button:hover {
     background-color: rgb(250, 156, 156);
+    box-shadow: rgba(248, 139, 96, 0.137) 0px 0px 35px,
+        rgba(255, 115, 22, 0.418) 0px 10px 10px,
+        rgba(255, 85, 33, 0.14) 0px 12px 22px,
+        rgba(255, 107, 22, 0) 0px 5px 12px,
+        rgba(255, 95, 31, 0.267) 0px 0px 0px;
 }
 
 a {
@@ -120,7 +125,7 @@ a {
 /*================= cards div ================ */
 
 .cards-div {
-    
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -135,7 +140,7 @@ a {
     width: 80%;
     transition: transform 0.90s;
     cursor: pointer;
-    
+
 
 }
 
@@ -157,7 +162,7 @@ a {
 .see-more-div {
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
 .see-more-button {
@@ -168,7 +173,7 @@ a {
     border-radius: 10px;
     cursor: pointer;
 
-    
+
 }
 
 
@@ -250,28 +255,33 @@ footer h1 {
     .cards-div {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .menu-bar {
         flex-direction: column;
         width: 80%;
         height: 30%;
     }
+
     .menu-bar button {
         width: 100%;
     }
+
     main {
         flex-direction: column;
     }
+
     .footer-div {
         display: flex;
         flex-direction: column;
     }
+
     /* .banner {
         flex-direction: column-reverse;
         
     }
      */
-   
-    
+
+
 }
 
 /* Medium device  */
@@ -280,15 +290,17 @@ footer h1 {
     .cards-div {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .menu-bar {
         flex-direction: row;
         width: 90%;
         height: 30%;
     }
+
     .menu-bar button {
         width: 100%;
     }
-    
+
     main {
         flex-direction: column;
     }
@@ -296,7 +308,7 @@ footer h1 {
     .see-more-button {
         display: inline;
     }
- 
+
 }
 
 
